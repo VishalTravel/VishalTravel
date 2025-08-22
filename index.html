@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Travel - Your Adventure Awaits</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A light gray background */
+        }
+        .hero-section {
+            background-image: url('https://placehold.co/1920x1080/8e44ad/FFFFFF?text=Adventure+Awaits');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Vishal Travel</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 transition duration-300">Home</a>
+                <a href="#destinations" class="text-gray-600 hover:text-indigo-600 transition duration-300">Destinations</a>
+                <a href="#packages" class="text-gray-600 hover:text-indigo-600 transition duration-300">Packages</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About Us</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-indigo-600">Home</a>
+            <a href="#destinations" class="block py-2 text-gray-600 hover:text-indigo-600">Destinations</a>
+            <a href="#packages" class="block py-2 text-gray-600 hover:text-indigo-600">Packages</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About Us</a>
+            <a href="#contact" class="block mt-2 bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 text-center">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section text-white h-[60vh] md:h-[80vh] flex items-center justify-center">
+            <div class="text-center bg-black bg-opacity-50 p-8 rounded-xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Your Next Adventure Awaits</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl">Discover breathtaking destinations and create unforgettable memories with our curated travel packages.</p>
+                <a href="#packages" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition duration-300">View Packages</a>
+            </div>
+        </section>
+
+        <!-- Popular Destinations Section -->
+        <section id="destinations" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Popular Destinations</h2>
+                <p class="text-center text-gray-600 mb-12">Explore the places that travelers love the most.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Destination Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                        <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Jaipur" alt="Jaipur" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Jaipur</h3>
+                            <p class="text-gray-600">The Pink City, known for its stunning forts, vibrant markets, and royal heritage.</p>
+                        </div>
+                    </div>
+                    <!-- Destination Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                        <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Kerala" alt="Kerala" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Kerala Backwaters</h3>
+                            <p class="text-gray-600">A serene paradise, offering houseboat cruises through lush, green landscapes.</p>
+                        </div>
+                    </div>
+                    <!-- Destination Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                        <img src="https://placehold.co/600x400/3498db/ffffff?text=Goa" alt="Goa" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Goa</h3>
+                            <p class="text-gray-600">A coastal haven, famous for its golden sands, vibrant nightlife, and unique culture.</p>
+                        </div>
+                    </div>
+                    <!-- Destination Card 4 - Ladakh (LINK ADDED) -->
+                    <a href="https://vishalhospitalrajkot.github.io/Ladakh/" target="_blank" rel="noopener noreferrer" class="block rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                        <div class="bg-white flex flex-col h-full">
+                            <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Ladakh" alt="Ladakh" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                            <div class="p-6 flex-grow flex flex-col">
+                                <h3 class="text-xl font-semibold mb-2">Ladakh</h3>
+                                <p class="text-gray-600 mb-4 flex-grow">A land of high-altitude deserts, crystal-clear lakes, and dramatic mountain scenery.</p>
+                                <div class="mt-auto text-right">
+                                    <span class="text-indigo-600 font-semibold hover:text-indigo-800">Learn More &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Packages Section -->
+        <section id="packages" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Best Travel Packages</h2>
+                <p class="text-center text-gray-600 mb-12">Handpicked deals for an unforgettable travel experience.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Package 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col card-hover-effect">
+                        <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Himalayan+Trek" alt="Himalayan Trek" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-semibold mb-2">Himalayan Adventure</h3>
+                            <p class="text-gray-600 mb-4">A 7-day trek through stunning mountain landscapes. Perfect for adventure enthusiasts.</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-indigo-600">₹45,000</span>
+                            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Package 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col card-hover-effect">
+                        <img src="https://placehold.co/600x400/1abc9c/ffffff?text=Kerala+Backwaters" alt="Kerala Backwaters" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-semibold mb-2">Backwaters Escape</h3>
+                            <p class="text-gray-600 mb-4">5 days of serene houseboat cruises, lush greenery, and authentic local cuisine.</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-indigo-600">₹30,000</span>
+                            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Package 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col card-hover-effect">
+                        <img src="https://placehold.co/600x400/e67e22/ffffff?text=Rajasthan+Royalty" alt="Rajasthan Royalty" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-xl font-semibold mb-2">Majestic Forts & Palaces</h3>
+                            <p class="text-gray-600 mb-4">Explore royal forts and palaces of Jaipur, Udaipur, and Jodhpur over 6 days.</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-indigo-600">₹38,000</span>
+                            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/34495e/ffffff?text=Our+Team" alt="About Us" class="rounded-lg shadow-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">About Vishal Travel</h2>
+                        <p class="text-gray-600 mb-4">
+                            Since our inception, Vishal Travel has been dedicated to providing one-stop solutions for every travel and comfort need. We started with a focus on connecting cities and have grown into a trusted name for creating memorable holiday experiences.
+                        </p>
+                        <p class="text-gray-600">
+                            Our mission is to offer sophisticated, end-to-end travel services with a thrust for innovation in customer comfort and cost. We believe travel should be an enriching experience, and our team of experts works tirelessly to ensure every journey with us is seamless and unforgettable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In Touch</h2>
+                <p class="text-center text-gray-600 mb-12">Have a question or want to plan your next trip? Contact us!</p>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="john.doe@example.com">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Tell us about your dream destination..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition duration-300">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold mb-2">Vishal Travel</p>
+            <p class="mb-4">Toral Complex, Near Limda Chowk, Trikon Baug, Rajkot, Gujarat - 360001</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-indigo-400 transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="hover:text-indigo-400 transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+                <a href="#" class="hover:text-indigo-400 transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.795 2.013 10.148 2 12.315 2zm-1.161 1.043c-2.408 0-2.718.01-3.683.058-1.15.053-1.649.22-1.998.377a2.88 2.88 0 00-1.12 1.12c-.157.35-.324.848-.377 1.998-.048.965-.058 1.275-.058 3.683s.01 2.718.058 3.683c.053 1.15.22 1.649.377 1.998a2.88 2.88 0 001.12 1.12c.35.157.848.324 1.998.377.965.048 1.275.058 3.683.058s2.718-.01 3.683-.058c1.15-.053 1.649-.22 1.998-.377a2.88 2.88 0 001.12-1.12c.157-.35.324-.848-.377-1.998.048-.965.058-1.275.058-3.683s-.01-2.718-.058-3.683c-.053-1.15-.22-1.649-.377-1.998a2.88 2.88 0 00-1.12-1.12c-.35-.157-.848-.324-1.998-.377-.965-.048-1.275-.058-3.683-.058zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 1.5a2.25 2.25 0 110 4.5 2.25 2.25 0 010-4.5z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 Vishal Travel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
